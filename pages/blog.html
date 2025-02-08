@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="shortcut icon"
+		href="https://statica.alifshop.uz/shop/rand/aa/eb/ae/aaebae8d-107a-463d-8a53-72d3239b05d1.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+	<style type="text/tailwindcss">
+		@theme {
+			--color-clifford: #da373d;
+			--font-inter: "Inter", serif;
+			--color-greenlines: #203E2F;
+			--color-blackB: #374151;
+			--color-greenD: #22C55D;
+		}
+		@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+	</style>
+	<title>Moliya Bo'limi</title>
+</head>
+
+<body class="font-inter">
+
+	<nav class="bg-greenlines hidden lg:block">
+		<div class="container w-10/12 mx-auto h-[70px] flex justify-between items-center">
+			<div class="flex text-white gap-[40px]">
+				<a href="#" class="flex items-center gap-[10px]">
+					<p class="hover:text-gray-300">Uzbekiston</p>
+					<i class="fa-solid fa-location-dot"></i>
+				</a>
+				<a href="#" class="flex items-center gap-[10px]">
+					<p class="hover:text-gray-300">+998 (78) 777 84 84</p>
+					<i class="fa-solid fa-phone"></i>
+				</a>
+				<a href="#" class="flex items-center gap-[10px]">
+					<p class="hover:text-gray-300">Texnik yordam markazi</p>
+					<i class="fa-brands fa-telegram"></i>
+				</a>
+				<a href="#" class="flex items-center gap-[10px]">
+					<p class="hover:text-gray-300">Sotuv kabineti</p>
+					<i class="fa-solid fa-bag-shopping text-greenD"></i>
+				</a>
+			</div>
+			<div class="flex gap-[20px]">
+				<div class="flex border bg-white/70 rounded-[39px] p-2 gap-[5px]">
+					<img src="https://cdn-icons-png.flaticon.com/512/3909/3909383.png" alt="american money" class="w-[30px]">
+					<span class="flex items-center">
+						<p class="text-blackB font-bold">USD = 12.999.1</p>
+						<sup class="text-greenD">+13.9</sup>
+					</span>
+				</div>
+				<button id="theme-toggle" class="bg-white/70 px-2 py-1 rounded-[10px] font-bold active:bg-gray-200"><i
+						id="modeIcon" class="fas fa-moon"></i> Green
+					Mode</button>
+				<a href="./addblog.html">
+					<button class="bg-white/70 px-2 py-2 rounded-[10px] font-bold active:bg-gray-200">Karta
+						qo'shish</button>
+				</a>
+			</div>
+		</div>
+
+
+	</nav>
+	<nav>
+		<div class="container w-[90%] mx-auto flex lg:hidden justify-between items-center mt-5 lg:hidden">
+			<img src="https://statica.alifshop.uz/shop/rand/aa/eb/ae/aaebae8d-107a-463d-8a53-72d3239b05d1.jpg" alt="icon"
+				class="w-20 rounded-lg">
+			<i class="fa-solid fa-bars text-white text-[30px]" onclick="navs()"></i>
+		</div>
+	</nav>
+
+
+	<div id="navbar"
+		class="absolute w-[50%] block lg:hidden top-0 bg-white/30 h-[100vh] p-3 left-[-11000px] duration-600">
+		<div class="w-full flex justify-end">
+			<button onclick="yop()"
+				class="bg-red-500 rounded-lg py-2 flex justify-center items-center px-5 text-white text-[30px]">x</button>
+		</div>
+		<div class="w-full flex flex-col items-center justify-center gap-[20px] mt-5">
+			<button id="theme-toggle" class="bg-black/70 px-2 py-1 rounded-[10px] text-white font-bold active:bg-gray-200"><i
+					id="modeIcon" class="fas fa-moon"></i> Green
+				Mode</button>
+			<a href="./addblog.html">
+				<button class="bg-black/70 text-white px-2 py-2 rounded-[10px] font-bold active:bg-gray-200">Karta
+					qo'shish</button>
+			</a>
+		</div>
+	</div>
+
+
+
+
+
+	<header class="mt-[50px]">
+		<div id="blogs"
+			class="container w-10/12 min-h-[600px] mx-auto grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-[20px]">
+			<!-- <div class="bg-greenlines dark:bg-white h-[300px] rounded-lg p-3 ">
+				<div class="h-[50%]">
+					<img
+						src="https://olcha.uz/image/700x700/products/caD5XmvRWSrOMkkzzgY2FwoJeJECD2pjtiiQawLbP9oMb8ezdw1PemBNJbvl.jpg"
+						alt="laptop" class="w-full h-full object-cover rounded-lg ">
+				</div>
+				<div class="h-[50%] w-full flex justify-top gap-[10px] flex-col items-center">
+					<h2 class="text-white mt-[10px] dark:text-black">Barselona</h2>
+					<p class="text-white dark:text-black">24-324-234523-5</p>
+					<button onclick="lenter()" class="bg-white px-3 py-1 rounded-lg text-greenlines font-bold">Batafsil</button>
+				</div>
+				<div></div>
+			</div> -->
+			<!-- <div class="border h-[300px]"></div>
+			<div class="border h-[300px]"></div>
+			<div class="border h-[300px]"></div>
+			<div class="border h-[300px]"></div>
+			<div class="border h-[300px]"></div> -->
+		</div>
+	</header>
+
+
+
+
+
+
+
+	<script src="../JS/Blog.js"></script>
+</body>
+
+</html>

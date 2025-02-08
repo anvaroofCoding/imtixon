@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="shortcut icon"
+		href="https://statica.alifshop.uz/shop/rand/aa/eb/ae/aaebae8d-107a-463d-8a53-72d3239b05d1.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+	<style type="text/tailwindcss">
+		@theme {
+			--color-clifford: #da373d;
+			--font-inter: "Inter", serif;
+			--color-greenlines: #203E2F;
+			--color-blackB: #374151;
+			--color-greenD: #22C55D;
+		}
+		@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+	</style>
+	<title>Kard qo'shish Bo'limi</title>
+</head>
+
+<body class="font-inter">
+
+
+	<div class="container w-10/12 min-h-[800px] mx-auto flex  justift-center items-center">
+		<div class="w-[80%] mx-auto flex flex-col justift-center items-center gap-[20px]">
+			<input type="text" name="" id="title" placeholder="Blok Nomi yozing" class="w-full border p-3 rounded-[5px]">
+			<input type="text" id="disc" placeholder="Izox kiriting" class="w-full border p-3 rounded-[5px]">
+			<select name="" id="select" class="w-full border p-3 rounded-[5px]">
+				<option value="1">1</option>
+				<option value="2">2</option>
+			</select>
+			<input type="file" name="" id="file" class="w-full border p-3 rounded-[5px]">
+			<button onclick="addBlog()" class="w-full border p-3 rounded-[5px]">Qo'shish</button>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<script src="../JS/addblog.js"></script>
+</body>
+
+</html>

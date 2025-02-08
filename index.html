@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="shortcut icon"
+		href="https://statica.alifshop.uz/shop/rand/aa/eb/ae/aaebae8d-107a-463d-8a53-72d3239b05d1.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+	<style type="text/tailwindcss">
+		@theme {
+			--color-clifford: #da373d;
+			--font-inter: "Inter", serif;
+			--color-greenlines: #203E2F;
+			--color-blackB: #374151;
+			--color-greenD: #22C55D;
+		}
+		@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+	</style>
+	<title>Registratsiya</title>
+</head>
+
+<body class="font-inter">
+
+
+
+	<header>
+		<div class="container lg:w-10/12 mx-auto min-h-[720px] flex justify-center items-center relative">
+			<div class="lg:w-2/3 w-[90%] flex flex-col gap-[30px] p-10 rounded-lg bg-greenlines/80 text-white">
+				<div class="flex flex-col ">
+					<label for="name">F.I.O</label>
+					<input id="inp_name" type="text" placeholder="..." class="w-full border outline-none p-2 rounded-lg">
+				</div>
+				<div class="flex flex-col ">
+					<label for="phone">Telefon Raqamingiz</label>
+					<input id="inp_phone" type="text" placeholder="..." class="w-full border outline-none p-2 rounded-lg">
+				</div>
+				<div class="flex flex-col ">
+					<label for="password">Parol</label>
+					<input id="inp_pass1" type="password" placeholder="..." class="w-full border outline-none p-2 rounded-lg">
+				</div>
+				<div class="flex flex-col ">
+					<label for="pass">Parol</label>
+					<input id="inp_pass2" type="password" placeholder="..." class="w-full border outline-none p-2 rounded-lg">
+				</div>
+				<div class="flex flex-col ">
+					<label for="file">Rasm Joylang</label>
+					<input id="inp_file" type="file" placeholder="..." class="w-full border outline-none p-2 rounded-lg">
+				</div>
+				<div class="flex flex-col lg:flex-row gap-[15px] w-full">
+					<button onclick="register()"
+						class="w-full border outline-none p-2 rounded-lg active:bg-greenlines/20">Registratsiyadan
+						O'tish</button>
+					<a href="./pages/login.html"
+						class="w-full text-center border outline-none p-2 rounded-lg active:bg-greenlines/20">
+						<button class="">Login</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="loading" class="loading hidden bg-black/25 h-[100vh] w-full fixed top-0 flex justify-center items-center">
+		<div class="text-white">Saqlanmoqda...</div>
+	</div>
+
+
+
+
+	<script src="./JS/main.js"></script>
+</body>
+
+</html>

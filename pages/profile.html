@@ -25,10 +25,15 @@
 		}
 		@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 	</style>
-	<title>Batafsil Ma'lumot</title>
+	<title>Moliya Bo'limi</title>
 </head>
 
 <body class="font-inter">
+
+
+
+
+
 
 	<nav class="bg-greenlines hidden lg:block sticky top-[0px]	">
 		<div class="container w-10/12 mx-auto h-[70px] flex justify-between items-center">
@@ -77,42 +82,65 @@
 	</nav>
 
 	<header>
-		<div class="container w-10/12 min-h-[400px] mx-auto text-center">
-			<div id="batafsil_blog">
-				<h1 class="font-bold text-[30px] dark:text-white">Batafsil Ma'lumot</h1>
-				<div class=" w-full flex justify-center ">
-					<img src="" alt="" class="w-[30%]" id="blog_img">
+		<div class="container w-10/12 mx-auto min-h-[700px] flex justify-center items-center">
+			<div class="w-2/3 rounded-lg">
+				<div class="h-[200px] bg-greenlines rounded-lg flex justify-center items-center relative">
+
+					<div class="w-[100px] h-[100px] border rounded-[50%] overflow-hidden">
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/1200px-User_icon_2.svg.png"
+							alt="avatar" class="w-full h-full object-cover" id="img">
+					</div>
+					<a href="#" class="absolute top-[160px] ">
+						<i class="fa-solid fa-pen-to-square font-bold text-[20px] text-white" onclick="chiquv()"
+							id="edit_image"></i>
+					</a>
 				</div>
-				<div class="w-full dark:text-white">
-					<h2 class="font-bold text-[20px]" id="titles"></h2>
-					<p id="created_at"></p>
-					<p id="disc"></p>
+				<div class="border h-[400px] rounded-lg flex justify-center flex-col items-center gap-[20px]">
+					<input type="text" name="" id="name_inp" class="border w-[80%] p-2 rounded-lg bg-gray-200"
+						placeholder="Ismingizni kiriting" readonly>
+					<input type="text" id="num_inp" class="border w-[80%] p-2 rounded-lg bg-gray-200"
+						placeholder="Telefon raqamingiz" readonly>
+					<input type="email" name="" id="email_inp" class="border w-[80%] p-2 rounded-lg bg-gray-200"
+						placeholder="Emailgizni kiriiting" readonly>
+					<input type="password" name="" id="pass_inp" class="border w-[80%] p-2 rounded-lg bg-gray-200"
+						placeholder="Parolingizni kiriting" readonly>
+					<button class="border w-[80%] p-2 rounded-lg bg-greenlines text-white hidden" id="saqlash"
+						onclick="addInpmo()">Saqlash</button>
+					<button class="border w-[80%] p-2 rounded-lg bg-yellow-800 text-white" id="tahrirlash"
+						onclick="eddsts()">Tahrirlash</button>
 				</div>
 			</div>
 		</div>
 	</header>
-	<section>
-		<div class="container w-10/12  mx-auto min-h-[200px]">
-			<h2 class="text-center font-bold text-[30px]">Kommentlar</h2>
-			<div id="comment-div" class="w-full grid lg:grid-cols-2 grid-cols-1 gap-[20px] mt-5">
-				<!-- <div class=" h-[100px] overflow-scroll bg-gray-300 rounded-lg p-3
-				">
-					<p>${}</p>
-				</div> -->
-			</div>
-			<div class="mt-3">
-				<textarea name="" id="textarea" class="w-full border"></textarea>
-				<button class="bg-blue-500 text-white p-3 rounded-lg" onclick="addComment()">Komment Qo'shish</button>
-			</div>
+
+
+	<!-- <section>
+		<div class="container"></div>
+	</section> -->
+
+	<div id="editFile" class="w-full h-[100vh] fixed bg-black/30 top-[0] flex justify-center items-center hidden">
+		<div class="w-[300px] h-[140px] bg-gray-200 rounded-lg p-3 flex flex-col items-start gap-[10px]">
+			<label for="avatasasr">Avatar Yuklang:</label>
+			<input type="file" name="avatar" id="input_image" class="border w-[80%] px-2 pl-0 bg-gray-400 rounded-lg">
+			<button onclick="addAvatar()" class="bg-yellow-500 p-2 rounded-lg">Saqlash</button>
 		</div>
-	</section>
+	</div>
 
 
 
 
 
 
-	<script src="../JS/batafsil.js"></script>
+
+
+
+
+
+
+
+
+	<script src="../JS/profile.js"></script>
 </body>
 
 </html>

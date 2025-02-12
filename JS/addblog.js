@@ -29,7 +29,7 @@ async function addBlog() {
 		res = await res.json()
 		console.log(res)
 
-		window.location.pathname = '/'
+		window.location.pathname = '../pages/blog.html'
 	} catch (error) {
 		alert(error.message)
 	}

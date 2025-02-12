@@ -29,8 +29,7 @@ async function addBlog() {
 		res = await res.json()
 		console.log(res)
 
-		window.location.pathname =
-			'/5-oy/21-dars Imtixondan bir oldin/pages/blog.html'
+		window.location.pathname = '/'
 	} catch (error) {
 		alert(error.message)
 	}
